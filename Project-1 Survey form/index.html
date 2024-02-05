@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link ref="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <div>
+    <h1 id="title">freecodecamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </div>
+
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" >Name
+          <input type="text" id="name" placeholder="Enter Your Name"required/>
+        </label>
+
+        <label id="email-label">Email
+          <input type="email" id="email" pattern="[a-z0-9]{@.}" placeholder="Enter Your Email" required/>
+        </label>
+
+        <label id="number-label">Age(optional)
+          <input type="number" id="number" min="13" max="120" placeholder="Enter Your Age"/>
+        </label>
+
+        <label>
+          Which option best describes your current role?
+        <select id="dropdown">
+          <option disabled selected value>Select an option</option>
+          <option>Student</option>
+          <option>FullTime Job</option>
+          <option>Full Time Learner</option>
+          <option>Prefer not to say</option>
+          <option>Other</option>
+        </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+      <legend> Would you recommend freeCodeCamp to a friend?
+        </legend>
+        <label>
+        <input type="radio" name="account-type" value="definitely"/>Definitely
+      </label>
+      <label>
+        <input type="radio" name="account-type" value="maybe"/>
+        Maybe
+      </label>
+      <label>
+        <input type="radio" name="account-type" value="not-sure"/>
+        Not sure
+      </label>
+      </fieldset>
+      
+      <fieldset>
+        <legend>
+          What is your favourite feature of freeCodeCamp?
+        </legend>
+        <select id="dropdown">
+          <option disabled selected value>Challenges</option>
+          <option>Projects</option>
+          <option>Community</option>
+          <option>Open Source</option>
+        </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          What woudl you like to see improved?
+        </legend>
+        <p>(check all if that apply)</p>  
+        <label>
+        <input type="checkbox"
+        value="front-end projects"/>Front-end Projects
+        </label>
+        <label>
+        <input type="checkbox" value="back-end projects">Back-end Projects
+        </label>
+        <label>
+        <input type="checkbox"
+        value="data-visualization"/>Data Visualization
+        </label>
+        <label>
+        <input type="checkbox"
+        value="challenges"/>Challenges
+        </label>
+        <label>
+        <input type="checkbox"
+        value="open-source-community"/>Open Source Community
+        </label>
+        <label>
+        <input type="checkbox" value="gitter-help-rooms"/>Gitter help rooms</label>
+        <label>
+        <input type="checkbox" value="Videos"/>Videos
+        </label>
+        <label>
+          <input type="checkbox"
+        value="city-meetup"/>City Meetups
+        </label>
+        <label>
+        <input type="checkbox" value="wiki"/>Wiki 
+        </label>
+        <label>
+        <input type="checkbox" value="forum"/>Forum
+        </label>
+        <label>
+          <input type="checkbox" value="additional-courses"/>Additional Courses
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label>
+          Any comments or suggestions?<textarea rows="5" placeholder="Any Suggestions to improve?"></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" 
+      id="submit" value="Submit"/>
+    </form>
+  </body>
+</html>
